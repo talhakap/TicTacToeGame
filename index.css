@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #ffbf00, #ff0080);
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#board {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+#winner-message {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+  font-family: monaco;
+    cursor: pointer;
+  background:lightgrey;
+}
+/* Add your existing CSS styles here */
+
+/* Modal styles */
+.modal {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal button {
+    margin: 10px;
+  background:lightgrey;
+}
+
+.menu h1{
+  color:lightgrey;
+  font-family:courier new;
+  font-size:60px;
+}
+.modal p{
+  color : white;
+}
